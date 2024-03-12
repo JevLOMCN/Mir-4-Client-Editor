@@ -8,7 +8,7 @@ APK Key = 0x86C7FF3309131F64AA1A2872444F3841281F7B82FEE14A54BF5CAD6C36F57377
 
 # Github:
 
-[Mir 4 Client Editor](https://github.com/JevLOMCN/Mir-4-Client-Editor)
+[Mir 4 Source](https://github.com/JevLOMCN/mir4)
 
 # Links:
 
