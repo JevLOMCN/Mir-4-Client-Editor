@@ -38,12 +38,14 @@
             // 
             // MainMenu
             // 
+            MainMenu.Dock = DockStyle.None;
             MainMenu.Items.AddRange(new ToolStripItem[] { ExportToolStripMenuItem, EditExportToolStripMenuItem, rePakToolStripMenuItem });
             MainMenu.Location = new Point(0, 0);
             MainMenu.Name = "MainMenu";
-            MainMenu.Size = new Size(885, 24);
+            MainMenu.Size = new Size(188, 24);
+            MainMenu.Stretch = false;
             MainMenu.TabIndex = 0;
-            MainMenu.Text = "menuStrip1";
+            MainMenu.Text = "Main Menu";
             // 
             // ExportToolStripMenuItem
             // 
@@ -70,7 +72,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(885, 494);
+            ClientSize = new Size(504, 373);
             Controls.Add(MainMenu);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = MainMenu;
