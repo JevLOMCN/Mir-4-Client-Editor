@@ -33,7 +33,12 @@
             ExportToolStripMenuItem = new ToolStripMenuItem();
             EditExportToolStripMenuItem = new ToolStripMenuItem();
             rePakToolStripMenuItem = new ToolStripMenuItem();
+            EditGroup = new GroupBox();
+            ExportGridView = new DataGridView();
+            ExportTreeView = new TreeView();
             MainMenu.SuspendLayout();
+            EditGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)ExportGridView).BeginInit();
             SuspendLayout();
             // 
             // MainMenu
@@ -68,18 +73,53 @@
             rePakToolStripMenuItem.Text = "RePak";
             rePakToolStripMenuItem.Click += rePakToolStripMenuItem_Click;
             // 
+            // EditGroup
+            // 
+            EditGroup.Controls.Add(ExportGridView);
+            EditGroup.Controls.Add(ExportTreeView);
+            EditGroup.Dock = DockStyle.Bottom;
+            EditGroup.Location = new Point(0, -506);
+            EditGroup.Name = "EditGroup";
+            EditGroup.Size = new Size(265, 567);
+            EditGroup.TabIndex = 1;
+            EditGroup.TabStop = false;
+            EditGroup.Visible = false;
+            // 
+            // ExportGridView
+            // 
+            ExportGridView.BackgroundColor = SystemColors.Window;
+            ExportGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            ExportGridView.Dock = DockStyle.Right;
+            ExportGridView.Location = new Point(-445, 19);
+            ExportGridView.Name = "ExportGridView";
+            ExportGridView.Size = new Size(707, 545);
+            ExportGridView.TabIndex = 1;
+            // 
+            // ExportTreeView
+            // 
+            ExportTreeView.Dock = DockStyle.Left;
+            ExportTreeView.FullRowSelect = true;
+            ExportTreeView.Location = new Point(3, 19);
+            ExportTreeView.Name = "ExportTreeView";
+            ExportTreeView.Size = new Size(192, 545);
+            ExportTreeView.TabIndex = 0;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(504, 373);
+            ClientSize = new Size(265, 61);
+            Controls.Add(EditGroup);
             Controls.Add(MainMenu);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = MainMenu;
             Name = "MainForm";
             Text = "Mir 4 Client Editor";
+            Load += MainForm_Load;
             MainMenu.ResumeLayout(false);
             MainMenu.PerformLayout();
+            EditGroup.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)ExportGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -90,5 +130,8 @@
         private ToolStripMenuItem ExportToolStripMenuItem;
         private ToolStripMenuItem EditExportToolStripMenuItem;
         private ToolStripMenuItem rePakToolStripMenuItem;
+        private GroupBox EditGroup;
+        private TreeView ExportTreeView;
+        private DataGridView ExportGridView;
     }
 }
