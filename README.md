@@ -12,7 +12,7 @@ APK Key = 0x86C7FF3309131F64AA1A2872444F3841281F7B82FEE14A54BF5CAD6C36F57377
 
 # Links:
 
-[Website](https://thelegendofmir.uk) // [Discord](https://discord.gg/rrrzFM3W)
+[Website](https://thelegendofmir.uk) // [Discord](https://discord.gg/Mir4)
 
 # Downloads:
 
